@@ -5,6 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
+/* ! Нужно создать базу данных !
+
+CREATE DATABASE [UsersDB]
+
+USE [UsersDB]
+
+CREATE TABLE [Users] (
+    [Id]       INT           IDENTITY (1, 1),
+    [Name]     NVARCHAR (32) NOT NULL,
+    [Age]      INT           ,
+    [Login]    NVARCHAR (32) NOT NULL,
+    [Password] NVARCHAR (32) NOT NULL,
+);
+*/
+
 namespace taskadonet
 {
     internal class UsersDB
@@ -34,7 +49,7 @@ namespace taskadonet
         }
         public void AddUser(User user)
         {
-            string connectionString = @"Server=DESKTOP-PN0DMCN; Database=TestAdo; Integrated Security=SSPI";
+            string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=Library;Integrated Security=SSPI;";
             using (SqlConnection connection = new(connectionString))
             {
                 connection.Open();

@@ -71,6 +71,7 @@
             button1.TabIndex = 4;
             button1.Text = "Sign Up";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // textBox2
             // 
@@ -101,7 +102,7 @@
             Controls.Add(label1);
             Controls.Add(textBox1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Authorization";
             ResumeLayout(false);
             PerformLayout();
         }
