@@ -17,17 +17,18 @@ namespace taskadonet
                 bool flag = true;
                 foreach (var user in users)
                 {
-                    if (user.Login == textBox1.Text)
+                    if (user.Login.ToLower() == textBox1.Text.ToLower())
                     {
                         required_user = user;
                         flag = false;
+                        break;
                     }
                 }
                 if (flag)
                 {
+                    MessageBox.Show("There is no user with this login.");
                     textBox1.Text = string.Empty;
                     textBox2.Text = string.Empty;
-                    MessageBox.Show("There is no user with this login.");
                 }
                 else
                 {
@@ -38,9 +39,9 @@ namespace taskadonet
                     }
                     else
                     {
+                        MessageBox.Show("Incorrect password.");
                         textBox1.Text = string.Empty;
                         textBox2.Text = string.Empty;
-                        MessageBox.Show("Incorrect password.");
                     }
                 }
             }

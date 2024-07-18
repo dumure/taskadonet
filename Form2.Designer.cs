@@ -44,7 +44,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13F);
-            label1.Location = new Point(140, 35);
+            label1.Location = new Point(211, 29);
             label1.Name = "label1";
             label1.Size = new Size(59, 25);
             label1.TabIndex = 3;
@@ -54,7 +54,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13F);
-            label2.Location = new Point(140, 184);
+            label2.Location = new Point(211, 156);
             label2.Name = "label2";
             label2.Size = new Size(56, 25);
             label2.TabIndex = 4;
@@ -64,7 +64,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13F);
-            label3.Location = new Point(123, 259);
+            label3.Location = new Point(194, 231);
             label3.Name = "label3";
             label3.Size = new Size(87, 25);
             label3.TabIndex = 5;
@@ -74,7 +74,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13F);
-            label4.Location = new Point(143, 110);
+            label4.Location = new Point(211, 92);
             label4.Name = "label4";
             label4.Size = new Size(44, 25);
             label4.TabIndex = 6;
@@ -82,28 +82,28 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(81, 63);
+            textBox1.Location = new Point(152, 57);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(170, 23);
             textBox1.TabIndex = 7;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(81, 212);
+            textBox2.Location = new Point(152, 184);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(170, 23);
             textBox2.TabIndex = 8;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(81, 287);
+            textBox3.Location = new Point(152, 259);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(170, 23);
             textBox3.TabIndex = 9;
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(123, 138);
+            numericUpDown1.Location = new Point(191, 120);
             numericUpDown1.Minimum = new decimal(new int[] { 18, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(87, 23);
@@ -112,7 +112,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(106, 355);
+            button1.Location = new Point(177, 327);
             button1.Name = "button1";
             button1.Size = new Size(118, 32);
             button1.TabIndex = 11;
@@ -124,7 +124,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(337, 440);
+            ClientSize = new Size(472, 410);
             Controls.Add(button1);
             Controls.Add(numericUpDown1);
             Controls.Add(textBox3);

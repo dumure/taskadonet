@@ -25,11 +25,12 @@ namespace taskadonet
     internal class UsersDB
     {
         private List<User> _users;
+        private string _connectionString;
         public UsersDB()
         {
             _users = new List<User>();
-            string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=Library;Integrated Security=SSPI;";
-            using (SqlConnection connection = new(connectionString))
+            _connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=UsersDB;Integrated Security=SSPI;";
+            using (SqlConnection connection = new(_connectionString))
             {
                 connection.Open();
                 SqlCommand cmd = new(
@@ -49,13 +50,11 @@ namespace taskadonet
         }
         public void AddUser(User user)
         {
-            string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=Library;Integrated Security=SSPI;";
-            using (SqlConnection connection = new(connectionString))
+            using (SqlConnection connection = new(_connectionString))
             {
                 connection.Open();
                 SqlCommand cmd = new(
                     @$"USE [UsersDB]
-                      GO
                       INSERT INTO Users([Name], Age, [Login], [Password])
                       VALUES(N'{user.Name}', {user.Age}, N'{user.Login}', N'{user.Password}')"
                     , connection);
